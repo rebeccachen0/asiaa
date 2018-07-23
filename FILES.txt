@@ -1,0 +1,16 @@
+currently working in: non_gaussian_likeli.ipynb
+
+previous versions: 
+linear fit testing.ipynb
+exact emcee example.ipynb
+emcee example w data.ipynb
+mcmc.ipynb
+week2.ipynb
+mcmc_uncert_scatter.py
+mcmc_informpri.py
+current_workbook_removed.ipynb -- test_nobias.ipynb (same but second w/o bias param)
+
+
+Clears ipynb output:
+remove_output.py
+
