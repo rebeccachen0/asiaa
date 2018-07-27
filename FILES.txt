@@ -1,15 +1,18 @@
-currently working in: non_gaussian_likeli.ipynb
+updated: july 27, 2018
+
+currently working in: no_scatter_eq22_3gauss.ipynb and
+no_scatter_eq22_2gauss.ipynb
 
 previous versions: 
-linear fit testing.ipynb
-exact emcee example.ipynb
+linear fit testing.ipynb (simple chi-sq fit)
+exact emcee example.ipynb 
 emcee example w data.ipynb
 mcmc.ipynb
 week2.ipynb
 mcmc_uncert_scatter.py
 mcmc_informpri.py
 current_workbook_removed.ipynb -- test_nobias.ipynb (same but second w/o bias param)
-
+non_gaussian_likeli.ipynb (first attempt with eq 22 likelihood)
 
 Clears ipynb output:
 remove_output.py
