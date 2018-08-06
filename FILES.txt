@@ -1,6 +1,6 @@
-updated: august 2, 2018
+updated: august 6, 2018
 
-currently working in: matrix_eq22.ipynb
+currently working in: forward_modeling.ipynb
 
 previous versions: 
 linear fit testing.ipynb (simple chi-sq fit)
@@ -13,7 +13,7 @@ mcmc_informpri.py
 current_workbook_removed.ipynb -- test_nobias.ipynb (same but second w/o bias param)
 non_gaussian_likeli.ipynb (first attempt with eq 22 likelihood)
 no_scatter_eq22_3gauss.ipynb -- no_scatter_eq22_2gauss.ipynb
-
+matrix_eq22.ipynb
 
 Clears ipynb output:
 remove_output.py
