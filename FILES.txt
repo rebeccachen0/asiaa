@@ -1,6 +1,6 @@
-updated: august 6, 2018
+updated: august 14, 2018
 
-currently working in: forward_modeling.ipynb
+currently working in: forward_modeling.ipynb and mcmc_fakedata.ipynb
 
 previous versions: 
 linear fit testing.ipynb (simple chi-sq fit)
