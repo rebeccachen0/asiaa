@@ -1,8 +1,12 @@
-updated: august 14, 2018
+Description of files in rebeccachen0/asiaa
+Updated: August 17th, 2018
 
-currently working in: forward_modeling.ipynb and mcmc_fakedata.ipynb
+Folders:
+data: contains the HARP and MxA3 data, as well as Peter's version with calculated y error
+plots_results: contains outputted plots and screenshots
 
-previous versions: 
+
+Messy versions/notebooks (roughly in order from older to newer): 
 linear fit testing.ipynb (simple chi-sq fit)
 exact emcee example.ipynb 
 emcee example w data.ipynb
@@ -14,7 +18,16 @@ current_workbook_removed.ipynb -- test_nobias.ipynb (same but second w/o bias pa
 non_gaussian_likeli.ipynb (first attempt with eq 22 likelihood)
 no_scatter_eq22_3gauss.ipynb -- no_scatter_eq22_2gauss.ipynb
 matrix_eq22.ipynb
+mcmc_fakedata.ipynb
+forward_modeling.ipynb
 
-Clears ipynb output:
-remove_output.py
+Cleaned up scripts:
+forward_modeling.py
+
+Other:
+remove_output.py -- clears ipynb output
+files with .p extension contain Python dictionaries with results from the forward modeling grid 
+and can be read using 
+	import pickle
+	dict = pickle.load(open("filename.p", "rb"))
 

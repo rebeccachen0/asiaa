@@ -6,13 +6,13 @@ from scipy.optimize import curve_fit
 import pickle
 
 def import_format_data():
-    mars = np.genfromtxt('harp_mars.dat', usecols=np.arange(0, 9))
-    jupiter = np.genfromtxt('harp_jupiter.dat', usecols=np.arange(0, 8))
-    uranus = np.genfromtxt('harp_uranus.dat', usecols=np.arange(0, 8))
+    mars = np.genfromtxt('data/harp_mars.dat', usecols=np.arange(0, 9))
+    jupiter = np.genfromtxt('data/harp_jupiter.dat', usecols=np.arange(0, 8))
+    uranus = np.genfromtxt('data/harp_uranus.dat', usecols=np.arange(0, 8))
 
-    mars_unc = np.genfromtxt('harp_mars_unc.dat')
-    jupiter_unc = np.genfromtxt('harp_jupiter_unc.dat')
-    uranus_unc = np.genfromtxt('harp_uranus_unc.dat')
+    mars_unc = np.genfromtxt('data/harp_mars_unc.dat')
+    jupiter_unc = np.genfromtxt('data/harp_jupiter_unc.dat')
+    uranus_unc = np.genfromtxt('data/harp_uranus_unc.dat')
     planets_unc = np.concatenate((mars_unc[:,9], jupiter_unc[:,8], uranus_unc[:,8]), axis=0)
     global yerr
     yerr = np.mean(planets_unc[planets_unc!=0])
@@ -153,7 +153,7 @@ def minimize_stats(full_results):
 def main():
     import_format_data()
     print("Testing models, generating stats")
-    full_results = generate_samples_stats(-.001, .001,.4, 1.0,.1, 1.0,.01, 2.0, 2)
+    full_results = generate_samples_stats(-.001, .001, .41, .71, .14, .59, .01, .88, 8)
     pickle.dump(full_results, open("full_results.p", "wb"))
     lowest, lowest_params = minimize_stats(full_results)
     print("Lowest ks test stat and params: ", lowest, lowest_params)
