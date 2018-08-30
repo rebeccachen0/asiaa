@@ -51,6 +51,8 @@ matrix_eq22.py
 
 
 Other:
+Rebecca_ASIAA_SSP_2018_Report.pdf
+	- my final writeup
 Rebecca - ASIAA SSP 2018 Presentation.pdf
 	- slides from my final presention
 remove_output.py
