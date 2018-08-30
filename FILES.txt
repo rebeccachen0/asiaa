@@ -1,33 +1,63 @@
 Description of files in rebeccachen0/asiaa
-Updated: August 17th, 2018
+Updated: August 30th, 2018
 
 Folders:
 data: contains the HARP and MxA3 data, as well as Peter's version with calculated y error
 plots_results: contains outputted plots and screenshots
+presentation_photo: various plots and photos for my presentation
 
 
-Messy versions/notebooks (roughly in order from older to newer): 
-linear fit testing.ipynb (simple chi-sq fit)
-exact emcee example.ipynb 
-emcee example w data.ipynb
+Notebooks (roughly in order from older to newer): 
+linear_fit_testing.ipynb 
+	- simple chi-sq fit
+
+exact_emcee_example.ipynb
+	- exact example in emcee documentation
+
+emcee_example_data.ipynb
+	- emcee example with the HARP data
+
 mcmc.ipynb
-week2.ipynb
-mcmc_uncert_scatter.py
-mcmc_informpri.py
-current_workbook_removed.ipynb -- test_nobias.ipynb (same but second w/o bias param)
-non_gaussian_likeli.ipynb (first attempt with eq 22 likelihood)
-no_scatter_eq22_3gauss.ipynb -- no_scatter_eq22_2gauss.ipynb
-matrix_eq22.ipynb
-mcmc_fakedata.ipynb
-forward_modeling.ipynb
+	- includes both assumed 10% uncertainty version and inferred uncertainty version
 
-Cleaned up scripts:
+week2.ipynb
+	- includes coding up of eq 35 (2D uncertainty and scatter likelihood)
+
+bias.ipynb -- test_nobias.ipynb 
+	- attempt to include bias by using scatter-like term
+	- second is the same but without bias parameter
+
+non_gaussian_likeli.ipynb
+	- first attempt with eq 22 likelihood
+
+no_scatter_eq22_2gauss.ipynb -- no_scatter_eq22_3gauss.ipynb
+	- mixture of 2 and 3 Gaussians
+
+matrix_eq22.ipynb
+	- Sundar's matrix version of the likelihood
+	- "final" version of the MCMC method
+
+mcmc_fakedata.ipynb
+	- testing MCMC method on fake generated datasets
+
+forward_modeling.ipynb
+	- includes various extra variations on the functions provided in the
+	cleaned up script, as well as diagnostic plots
+
+
+Cleaned up scripts (with functions and function descriptions):
 forward_modeling.py
+matrix_eq22.py
+
 
 Other:
-remove_output.py -- clears ipynb output
-files with .p extension contain Python dictionaries with results from the forward modeling grid 
-and can be read using 
+Rebecca - ASIAA SSP 2018 Presentation.pdf
+	- slides from my final presention
+remove_output.py
+	- clears ipynb output, useful if plots/results are taking too long to load
+
+Files with .p extension contain Python dictionaries with results from the forward modeling grid 
+and can be read using: 
 	import pickle
 	dict = pickle.load(open("filename.p", "rb"))
 
